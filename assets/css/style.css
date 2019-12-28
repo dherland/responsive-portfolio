@@ -134,12 +134,21 @@ body {
     border: 1px solid #dddddd;
   }
   
+
   .sidebar {
-
-    float: right; 
-    width: 100%;
-    max-width: 270px;
-
+      float: right;
+      width: 100%;
+      max-width: 270px;
+    
+      /* Box-model */
+      padding: 30px;
+    
+      /* Positioning */
+      margin-bottom: 20px;
+      background: #fff;
+    
+      /* Visual */
+      border: 1px solid #ddd;
   }
 
   /* portfolio page */
@@ -229,8 +238,55 @@ body {
       margin-right: 5px;
       
     }
+
+    .main-section{
+
+      width: 100%;
+      max-width: 700px;
+
+    }
     body {
       background-color: aquamarine;
     }
   }
   
+  @media only screen and (max-width:768px) {
+    nav {
+      margin-right: 5px;
+      
+    }
+
+    .main-section{
+
+      width: 100%;
+      margin-left: 10px;
+  
+
+    }
+    body {
+      background-color: red;
+    }
+  }
+
+  @media only screen and (max-width:640px) {
+    nav {
+      margin-right: 5px;
+      
+    }
+
+    #masthead {
+
+      
+    }
+
+    .main-section{
+
+      max-width: 640px;
+      margin-left: 10px;
+  
+
+    }
+    body {
+      background-color: burlywood;
+    }
+  }
