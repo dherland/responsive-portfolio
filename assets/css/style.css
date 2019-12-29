@@ -257,25 +257,28 @@ body {
   }
   
   @media only screen and (max-width:980px) {
+    
+    #masthead.container {
+      max-width: 100%;
+    }
+    
     nav {
-      margin-right: 5px;
-      
+      margin-right: 25px;     
     }
 
-    .main-section{
-
-      width: 100%;
-      max-width: 700px;
-
-    }
     body {
       background-color: aquamarine;
     }
   }
   
   @media only screen and (max-width:768px) {
+    
+    #masthead.container {
+      max-width: 100%;
+    }
+    
     nav {
-      margin-right: 5px;
+      margin-right: 25px;
       
     }
 
