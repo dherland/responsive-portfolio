@@ -151,6 +151,29 @@ body {
       border: 1px solid #ddd;
   }
 
+  main {
+    padding-top: 130px;
+  }
+  
+  .main-section {
+    float: left;
+    width: 100%;
+    max-width: 650px;
+  
+    /* Box-model */
+    padding: 30px;
+  
+    /* Positioning */
+    margin: 0 0 40px;
+    background: #fff;
+  
+    /* Visual */
+    border: 1px solid #ddd;
+  }
+  
+  
+
+
   /* portfolio page */
   
   .work {
@@ -256,12 +279,18 @@ body {
       
     }
 
-    .main-section{
+    main {
 
+      overflow: auto;
+    }
+
+    main.container {
+      margin-top: 5px;
       width: 100%;
-      margin-left: 10px;
-  
+    }
 
+    .auth-image {
+      width: 50%;
     }
     body {
       background-color: red;
@@ -269,23 +298,35 @@ body {
   }
 
   @media only screen and (max-width:640px) {
-    nav {
-      margin-right: 5px;
-      
-    }
 
     #masthead {
-
-      
+      position: static;
+      margin-bottom: 5px;
     }
 
-    .main-section{
+    header.container {
 
-      max-width: 640px;
-      margin-left: 10px;
+      padding: 0;
+    }
+
+    #logo,
+    .work,
+    .auth-image {
+      width: 100%;
+    }
+
+    main.container {
+      padding-top: 0;
+      width: 100%;
+    }
+
+    nav {
+
+      text-align: center;
+      width: 100%;
+      margin: 15px, 0;
+    }
   
-
-    }
     body {
       background-color: burlywood;
     }
